@@ -15,7 +15,7 @@ export default async function (fastify, opts) {
             email: request.body.email,
             telefono: request.body.telefono
         }
-        contactos[request.params.id] = contacto
+        contactos[request.params.id - 1] = contacto
         return reply.redirect('/')
     });
 

@@ -2,7 +2,7 @@
 
 <div class="container">
     <h2>Editar Contacto</h2>
-    <form action="edit" method="POST">
+    <form action="<%= contacto.id  %>" method="POST">
         <%- include('../dentroform.ejs', {contacto: contacto}) %>
 
     </form>
