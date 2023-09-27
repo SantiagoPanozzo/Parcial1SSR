@@ -1,0 +1,15 @@
+<div class="card" style="width: 280px;">
+    <div class="card-body">
+        <img class="card-img-top rounded-circle p-3" src="<%= contacto.foto %>" alt="foto">
+        <h5 class="card-title text-center"> <%= contacto.nombre %> </h5>
+        <p class="card-text"> <strong>Edad: </strong><%= contacto.edad %></p>
+        <p class="card-text"> <strong>Sobrenombre: </strong><%= contacto.sobrenombre %></p>
+        <p class="card-text"> <strong>Email: </strong><%= contacto.email %></p>
+        <p class="card-text"> <strong>Teléfono: </strong><%= contacto.telefono %></p>
+
+        <div class="text-center btn-group">
+            <a href="edit/<%= contacto.id %>" class="btn btn-primary" style="width: 120px;">Editar</a>
+            <a href="delete/<%= contacto.id %>" class="btn btn-danger" style="width: 120px;">Eliminar</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<%- include('../../prebody.ejs') %>
+
+<div class="container">
+    <h2>Editar Contacto</h2>
+    <form action="edit" method="POST">
+        <%- include('../dentroform.ejs', {contacto: contacto}) %>
+
+    </form>
+</div>
+
+<%- include('../../afterbody.ejs') %>

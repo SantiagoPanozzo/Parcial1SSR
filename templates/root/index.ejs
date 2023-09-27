@@ -1,0 +1,23 @@
+<%- include('../prebody.ejs') %>
+
+<main class="container">
+    <div style="display: flex; flex-direction: column;">
+        <h1 class="text-primary">Contactos</h1>
+        <a href="new" class="btn btn-success rounded-circle m-3" type="button"
+            style="font-size: large; width: 60px; height: 60px;">
+            <p style="font-size: 28px;">+</p>
+        </a>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-5">
+        <% contactos.forEach(contacto => { %>
+        <div class="col">
+            <%-     include('contactocard.ejs', {contacto: contacto}) %>
+        </div>
+        <% }); %>
+    </div>
+
+</main>
+
+
+
+<%- include('../afterbody.ejs') %>

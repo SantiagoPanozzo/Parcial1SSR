@@ -1,0 +1,38 @@
+<div class="form-group" id="formulario">
+    <label for="nombre">Nombre</label>
+    <input type="text" minlength="5" name="nombre" class="form-control" id="nombre" value="<%= contacto.nombre %>"
+        placeholder="Nombre">
+</div>
+<br>
+<div class="form-group" id="formulario">
+    <label for="sobrenombre">Sobrenombre</label>
+    <input type="text" minlength="2" maxlength="10" value="<%= contacto.sobrenombre %>" name="sobrenombre"
+        class="form-control" id="sobrenombre" placeholder="Sobrenombre">
+</div>
+<br>
+<div class="form-group" id="formulario">
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" min="18" class="form-control" value="<%= contacto.edad %>" id="edad"
+        placeholder="Edad">
+</div>
+<br>
+<div class="form-group" id="formulario">
+    <label for="email">Email</label>
+    <input type="email" name="email" class="form-control" value="<%= contacto.email %>" id="email" placeholder="Email">
+</div>
+<br>
+<div class="form-group" id="formulario">
+    <label for="telefono">Teléfono</label>
+    <input type="tel" name="telefono" class="form-control" id="telefono" value="<%= contacto.telefono %>"
+        placeholder="Teléfono">
+</div>
+<br>
+<div class="form-group" id="formulario">
+    <label for="foto">Foto</label>
+    <input type="url" name="foto" class="form-control" id="foto" value="<%= contacto.foto %>" placeholder="Foto">
+</div>
+<br>
+<div class="btn-group text-center">
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="../" class="btn btn-danger">Cancelar</a>
+</div>
